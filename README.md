@@ -1,22 +1,25 @@
-<h1 align="center">Hi 👋 <img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" height="40px" width="40px">I'm Manav Shah</h1>
+## Old, will update someday...
+<h1 >Hi there, <img src="https://github.com/ABSphreak/ABSphreak/blob/master/gifs/Hi.gif" height="40px" width="40px"></h1>
 
- 
+**I'm Manav Shah, I love to explore multiple things🧑‍💻**
 
-<img align="left" alt="Coding" width="300" src="https://github.com/Ayushparikh-code/Ayushparikh-code/blob/main/coding-freak%20(1).gif">
+<img align="left" alt="Coding" width="300" src="https://github.com/user-attachments/assets/cf57516f-f0f4-4c6a-bd3f-1d02538a1287">
 
 <br>
 
 <br>
 
-<p>&nbsp;&nbsp;&nbsp;I am a final-year Computer Science student who is learning a lot of things right now.</p>
+- 💞️ I’m always excited to collaborate on projects that are innovative, engaging, and fun.  
+- 🦾 I enjoy exploring fresh ideas and staying ahead of the curve with emerging trends.  
+- 🌱 I’m driven by curiosity and love transforming ideas into impactful solutions.  
+
+
+  
 <br>
 <br>
 
   &nbsp;&nbsp;&nbsp;[**View My Resume**](https://drive.google.com/file/d/1V9VMvzxpPBNkFmELQD9Zk3GJ_pToz6pP/view?usp=drive_link)
 
-<br>
-<br>
-<br>
 <br>
 
 

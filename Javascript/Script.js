@@ -35,6 +35,11 @@ const textArray = [
       }
     }
   }
+  function toggleNav() {
+    const navLinks = document.getElementById('nav-links');
+    navLinks.classList.toggle('active');
+  }
+  
   
   // Start the effect
   typeWriterEffect();

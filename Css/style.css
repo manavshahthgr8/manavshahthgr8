@@ -112,17 +112,32 @@ body {
   padding: 20px;
   line-height: 1.6;
 }
+/* Paragraph Styling */
+.intro-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: justify;
+  color: #ddd; /* Light gray for contrast */
+}
 
 /* Dynamic Text Typewriter Effect */
+/* Style for Typewriter Container */
 .typewriter-container {
   font-family: 'Courier New', monospace;
   font-size: 1.6rem;
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
+  color: #ffda00;
+}
+
+#dynamic-text {
+  color: white; /* Style the dynamic part differently if desired */
   border-right: 2px solid orange; /* Typing cursor effect */
   animation: blink-caret 0.75s step-end infinite;
 }
+
 
 /* Cursor Animation */
 @keyframes blink-caret {
@@ -166,6 +181,14 @@ body {
     width: 300px;
     height: 300px;
     margin: 10px 0;
+  }
+  .about-me {
+    max-width: 100%;
+    text-align: center; /* Center align text for smaller screens */
+  }
+
+  .intro-text {
+    font-size: 0.9rem; /* Slightly smaller font size for readability */
   }
 }
 

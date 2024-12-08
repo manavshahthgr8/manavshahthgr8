@@ -1,46 +1,40 @@
 // List of phrases to type
 const textArray = [
-    "I love coding.",
-    "I am passionate about product management.",
-    "I thrive to solve problems."
-  ];
-  
-  let textIndex = 0; // Index of the current text
-  let charIndex = 0; // Index of the current character
-  let isDeleting = false; // Whether the effect is deleting text
-  
-  const dynamicText = document.getElementById("dynamic-text");
-  
-  function typeWriterEffect() {
-    if (isDeleting) {
+  "love coding.",
+  "am passionate about product management.",
+  "thrive to solve problems."
+];
+
+let textIndex = 0; // Index of the current text
+let charIndex = 0; // Index of the current character
+let isDeleting = false; // Whether the effect is deleting text
+
+const dynamicText = document.getElementById("dynamic-text");
+
+function typeWriterEffect() {
+  if (isDeleting) {
       // Delete text effect
       if (charIndex > 0) {
-        charIndex--;
-        dynamicText.textContent = textArray[textIndex].substring(0, charIndex);
-        setTimeout(typeWriterEffect, 50);
+          charIndex--;
+          dynamicText.textContent = textArray[textIndex].substring(0, charIndex);
+          setTimeout(typeWriterEffect, 50);
       } else {
-        isDeleting = false;
-        textIndex = (textIndex + 1) % textArray.length; // Move to the next phrase
-        setTimeout(typeWriterEffect, 500);
+          isDeleting = false;
+          textIndex = (textIndex + 1) % textArray.length; // Move to the next phrase
+          setTimeout(typeWriterEffect, 500);
       }
-    } else {
+  } else {
       // Typing effect
       if (charIndex < textArray[textIndex].length) {
-        charIndex++;
-        dynamicText.textContent = textArray[textIndex].substring(0, charIndex);
-        setTimeout(typeWriterEffect, 100);
+          charIndex++;
+          dynamicText.textContent = textArray[textIndex].substring(0, charIndex);
+          setTimeout(typeWriterEffect, 100);
       } else {
-        isDeleting = true;
-        setTimeout(typeWriterEffect, 2000);
+          isDeleting = true;
+          setTimeout(typeWriterEffect, 2000);
       }
-    }
   }
-  function toggleNav() {
-    const navLinks = document.getElementById('nav-links');
-    navLinks.classList.toggle('active');
-  }
-  
-  
-  // Start the effect
-  typeWriterEffect();
-  
+}
+
+// Start the effect
+typeWriterEffect();

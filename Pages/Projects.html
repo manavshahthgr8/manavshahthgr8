@@ -3,31 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <link rel="icon" href="../Images/image.png" type="image/x-icon">
+  <title>Manav's Project</title>
   <link rel="stylesheet" href="../Css/style.css">
+  <script src="../script_updates.js"></script>
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="#project">Projects</a></li>
-        <li><a href="Skills.html">Skills</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-    </ul>
+    <div class="nav-container">
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html" id="home-link">Home</a></li>
+        <li><a href="#project" id="projects-link">Projects</a></li>
+        <li><a href="Skills.html" id="skills-link">Skills</a></li>
+        <li><a href="Contact.html" id="contact-link">Contact Me</a></li>
+        
+      </ul>
+    </div>
   </nav>
 
-  <!-- Main Content -->
-  <div id="home">
-    <h1>Welcome to  Projects</h1>
-  </div>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="social-links">
-      <a href="https://linkedin.com/in/your-linkedin-id" target="_blank">LinkedIn</a>
-    </div>
-    <p>&copy; 2024 Manav's Portfolio | Designed with passion</p>
-  </footer>
 </body>
 </html>

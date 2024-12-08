@@ -22,18 +22,21 @@ body {
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  position: relative; /* Remove fixed positioning */
   bottom: 0;
-  left: 0;
   width: 100%;
 }
+
 
 /* Navigation Bar */
 .navbar {
   background-color: black;
   padding: 10px 0;
-  position: relative; /* Ensure the dropdown stays inside the navbar */
-  z-index: 10;
+  position: fixed; /* Fix the nav at the top */
+  top: 0;
+  left: 0;
+  width: 100%; /* Make sure it spans the full width of the viewport */
+  z-index: 100; /* Ensure it stays on top of other elements */
   text-align: center;
 }
 
@@ -93,6 +96,13 @@ body {
     display: flex;
   }
 }
+
+.nav-links a.active {
+  color: #ffda00; /* Yellow for the active link */
+  font-weight: bold; /* Optional for emphasis */
+}
+
+
 
 
 /* Main Content Section */
@@ -172,7 +182,7 @@ body {
 
 /* Hover Effect for Interactivity */
 .profile-section img:hover {
-  transform: scale(1.1);
+  transform: scale(1.5);
 }
 
 /* Responsive image adjustments */
@@ -198,8 +208,52 @@ body {
   color: white;
   text-align: center;
   padding: 10px;
-  position: fixed;
+  position: relative; /* Remove fixed positioning */
   bottom: 0;
-  left: 0;
   width: 100%;
 }
+
+
+/* Company Logos Section */
+.company-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 10%;
+  background-color: #444; /* Optional for better contrast */
+}
+
+.company-logo {
+  max-width: 100px; /* Adjust size of logos */
+  height: auto;
+  margin: 0 10px; /* Add spacing between logos */
+  transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+/* Resume Section */
+.resume-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+/* Download Button Styling */
+.download-resume {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #ffda00;
+  color: black;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-resume:hover {
+  background-color: #ffd700; /* Slightly darker yellow on hover */
+  transform: translateY(-3px); /* Lift effect */
+}
+

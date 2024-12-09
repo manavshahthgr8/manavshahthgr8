@@ -83,3 +83,46 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 });
+
+let currentIndex = 0; // Start at the first slide
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".slider-nav .dot");
+
+// Function to show a specific slide
+function showSlide(index) {
+  currentIndex = index;
+
+  // Ensure index wraps around within bounds
+  if (currentIndex >= slides.length) {
+    currentIndex = 0;
+  } else if (currentIndex < 0) {
+    currentIndex = slides.length - 1;
+  }
+
+  // Hide all slides and remove 'active' class from dots
+  slides.forEach((slide) => slide.classList.remove("active"));
+  dots.forEach((dot) => dot.classList.remove("active"));
+
+  // Show the current slide and activate the corresponding dot
+  slides[currentIndex].classList.add("active");
+  dots[currentIndex].classList.add("active");
+}
+
+// Auto-slide every 5 seconds
+function autoSlide() {
+  currentIndex++;
+  showSlide(currentIndex);
+}
+
+// Event listener for dots
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => showSlide(index));
+});
+
+// Initialize the carousel
+showSlide(0); // Show the first slide
+setInterval(autoSlide, 5000); // Automatically change slides every 5 seconds
+
+
+
+

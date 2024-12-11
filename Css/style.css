@@ -93,7 +93,7 @@ body {
 .footer-bottom {
   margin-top: 20px;
   font-size: 0.9rem;
-  border-top: 1px solid #444;
+  border-top: 1px solid rgb(214, 185, 17);
   text-align: center;
   padding-top: 10px;
 }
@@ -275,7 +275,7 @@ body {
 
 /* Profile Section */
 .profile-section {
-  display: flex;
+  
   justify-content: center; /* Horizontally center */
   align-items: flex-start; /* Align the image to the top */
   margin-top: 10px;
@@ -595,6 +595,8 @@ body{
   }
 }
 /* Reset styles for the nested list */
+
+
 
 
 

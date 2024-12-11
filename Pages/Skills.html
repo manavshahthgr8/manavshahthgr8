@@ -3,31 +3,60 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manav Portfolio</title>
+  <link rel="icon" href="../Images/image.png" type="image/x-icon">
+  <title>Skill Section</title>
   <link rel="stylesheet" href="../Css/style.css">
+  <script src="../script_updates.js"></script>
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="Projects.html">Projects</a></li>
-        <li><a href="#skill">Skills</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-    </ul>
+    <div class="nav-container">
+      <!-- Hamburger Menu Icon -->
+      <div class="hamburger" onclick="toggleNav()">&#9776;</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html" id="home-link">Home</a></li>
+        <li><a href="Projects.html" id="projects-link">Projects</a></li>
+        <li><a href="#Skills" id="skills-link">Skills</a></li>
+        <li><a href="Contact.html" id="contact-link">Contact Me</a></li>
+        
+      </ul>
+    </div>
   </nav>
 
-  <!-- Main Content -->
-  <div id="home">
-    <h1>Welcome to My skills</h1>
-  </div>
-
- <!-- Footer -->
- <footer class="footer">
-    <div class="social-links">
-      <a href="https://linkedin.com/in/your-linkedin-id" target="_blank">LinkedIn</a>
+   <!-- Sticky Footer Section -->
+   <footer class="footer" id="footer">
+    <div class="footer-center">
+      <p>Thanks for visiting my profile till the end!</p>
     </div>
-    <p>&copy; 2024 Manav's Portfolio | Designed with passion</p>
+    <div class="footer-container">
+      <!-- Left Section -->
+      <div class="footer-left">
+        <img src="Images\transparent-coding-development-icon-free-png.webp" alt="Site Logo" class="footer-logo">
+        <ul class="footer-links">
+          <li><a href="Pages\Skills.html">Skills</a></li>
+          <li><a href="Pages\Projects.html">Projects</a></li>
+          <li><a href="Pages\Contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Centered Message -->
+     
+  
+      <!-- Right Section -->
+      <div class="footer-right">
+        <p>Let's stay connected</p>
+        <a href="https://linkedin.com/in/manavshahthgr8" target="_blank">
+          <img src="Images\LinkedIn-Emblema.png" alt="LinkedIn Logo" class="social-logo">
+        </a>
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2024 Manav's Portfolio | Designed with love</p>
+    </div>
   </footer>
+  
+
 </body>
 </html>

@@ -123,6 +123,13 @@ dots.forEach((dot, index) => {
 showSlide(0); // Show the first slide
 setInterval(autoSlide, 5000); // Automatically change slides every 5 seconds
 
+// JavaScript for filtering projects
+
+
+
+
+
+
 
 
 

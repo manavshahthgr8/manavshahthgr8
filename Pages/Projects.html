@@ -44,7 +44,7 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
-      justify-items: start; /* Align boxes to the left */
+      justify-items: center; /* Align boxes to the left */
     }
 
     .project-box {
@@ -52,20 +52,23 @@
       border: 1px solid #ddd;
       border-radius: 8px;
       padding: 15px;
-      text-align: left;
+      text-align: center;
       transition: box-shadow 0.3s ease, transform 0.3s ease;
       min-height: 300px; /* Ensures the button stays at the bottom */
       display: flex;
       flex-direction: column;
       justify-content: space-between; /* Pushes the buttons to the bottom */
       position: relative; /* Make the project box relative to position modal inside it */
+      width: 280px;
     }
 
     .project-box img {
-      width: 100%;
+      width: 180px;
       height: 180px;
-      object-fit: cover;
+      object-fit: contain;
       border-radius: 8px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .project-box h3 {
@@ -128,7 +131,7 @@
     .modal .close {
       position: absolute;
       top: 10px;
-      right: 10px;
+      right: 24px;
       font-size: 2rem;
       color: black;
       cursor: pointer;
@@ -170,60 +173,82 @@
     <div class="project-container">
       <!-- Box 1 -->
       <div class="project-box" data-category="product">
-        <img src="project1.jpg" alt="Product Project 1">
-        <h3>Product Project 1</h3>
-        <p class="description">Short description about Product Project 1.</p>
+        <img src="..\Images\bookmyshow-logo_brandlogos.net_rzqea.png" alt="Product Project 1">
+        <h3>BookMyShow Group feature</h3>
+        <p class="description">Now Single ticket booker have option to be a part of group.</p>
         <div class="project-buttons">
           <button class="view-more">View More</button>
-          <a href="https://example.com" class="project-site-link" target="_blank">Visit Site</a>
+          <a href="https://drive.google.com/file/d/18CuiZhpEEyDlzlohXDVaOA4uKwRKa2hy/view?usp=drive_link" class="project-site-link" target="_blank">Visit Site</a>
         </div>
   
         <!-- Modal for Box 1 -->
         <div class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Product Project 1</h3>
-            <p class="description">Detailed description about Product Project 1.</p>
+            <h3>BookMyShow Group feature</h3>
+            <p class="description">A detailed PRD on creating an option to increase social interaction & allow a single person or a new person in a town to interact with other people.</p>
           </div>
         </div>
       </div>
+
+      
   
       <!-- Box 2 -->
       <div class="project-box" data-category="software">
-        <img src="project2.jpg" alt="Software Project 1">
-        <h3>Software Project 1</h3>
-        <p class="description">Short description about Software Project 1.</p>
+        <img src="https://github.com/manavshahthgr8/Bank-Management-System/blob/master/Readme-images/Screenshot%20(5).png?raw=true" alt="Software Project 1">
+        <h3>ATM Simulation</h3>
+        <p class="description">A one stop platform for all ATM based operation using JAVA</p>
         <div class="project-buttons">
           <button class="view-more">View More</button>
-          <a href="https://example.com" class="project-site-link" target="_blank">Visit Site</a>
+          <a href="https://github.com/manavshahthgr8/Bank-Management-System" class="project-site-link" target="_blank">Visit Site</a>
         </div>
   
         <!-- Modal for Box 2 -->
         <div class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Software Project 1</h3>
-            <p class="description">Detailed description about Software Project 1.</p>
+            <h3>ATM Simulator</h3>
+            <p class="description"> Java based application using SwingUI with Employee & User login. It enables user to register, deposit, withdraw , statement & other ATM based features.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="project-box" data-category="product">
+        <img src="..\Images\Swiggy-Logo.png" alt="Software Project 1">
+        <h3>Swiggy & AI</h3>
+        <p class="description">Personalization using AI.</p>
+        <div class="project-buttons">
+          <button class="view-more">View More</button>
+          <a href="https://drive.google.com/file/d/1bbOKKhQ6aeRCTpTO7_xwLnT4nmkNn68K/view?usp=drive_link" class="project-site-link" target="_blank">Visit Site</a>
+        </div>
+  
+        <!-- Modal for Box 2 -->
+        <div class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3>Swiggy & AI</h3>
+            <p class="description">How AI can help increase in user retention & increasing revenue.</p>
           </div>
         </div>
       </div>
 
       <!-- Box 3 -->
-      <div class="project-box" data-category="software">
-        <img src="project3.jpg" alt="Software Project 3">
-        <h3>Software Project 3</h3>
-        <p class="description">Short description about Software Project 3.</p>
+      <div class="project-box" data-category="product">
+        <img src="..\Images\zepto-logo-F448DDFE54-seeklogo.com_.png" alt="Software Project 3">
+        <h3>Zepto User Journey</h3>
+        <p class="description">How Zepto is capturing a market in a new sector in 2023</p>
         <div class="project-buttons">
           <button class="view-more">View More</button>
-          <a href="https://example.com" class="project-site-link" target="_blank">Visit Site</a>
+          <a href="https://drive.google.com/file/d/1KZTCSTq0yGRFEtkUZOQQbMIx7bACUBrE/view?usp=drive_link" class="project-site-link" target="_blank">Visit Site</a>
         </div>
 
         <!-- Modal for Box 3 -->
         <div class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <h3>Software Project 3</h3>
-            <p class="description">Detailed description about Software Project 3.</p>
+            <h3>Zepto</h3>
+            <p class="description"> Its a user journey for a new product Zepto.</p>
           </div>
         </div>
       </div>
@@ -237,17 +262,17 @@
     </div>
     <div class="footer-container">
       <div class="footer-left">
-        <img src="Images\transparent-coding-development-icon-free-png.webp" alt="Site Logo" class="footer-logo">
+        <img src="..\Images\transparent-coding-development-icon-free-png.webp" alt="Site Logo" class="footer-logo">
         <ul class="footer-links">
-          <li><a href="Pages\Projects.html">Home</a></li>
-          <li><a href="..\index.html">Skills</a></li>
-          <li><a href="Pages\Contact.html">Contact</a></li>
+          <li><a href="..\Index.html">Home</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
       </div>
       <div class="footer-right">
         <p>Let's stay connected</p>
         <a href="https://linkedin.com/in/manavshahthgr8" target="_blank">
-          <img src="Images\LinkedIn-Emblema.png" alt="LinkedIn Logo" class="social-logo">
+          <img src="..\Images\LinkedIn-Emblema.png" alt="LinkedIn Logo" class="social-logo">
         </a>
       </div>
     </div>

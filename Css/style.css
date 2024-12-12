@@ -275,7 +275,7 @@ body {
 
 /* Profile Section */
 .profile-section {
-  
+  display: flex;
   justify-content: center; /* Horizontally center */
   align-items: flex-start; /* Align the image to the top */
   margin-top: 10px;
@@ -286,6 +286,7 @@ body {
 
 /* Enlarged Image */
 .profile-section img {
+  display: flex;
   width: 400px; /* Adjust the image size */
   height: 400px;
   transform: scaleX(-1);

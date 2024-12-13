@@ -4,9 +4,105 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="../Images/image.png" type="image/x-icon">
-  <title>Manav's Project</title>
+  <title>Contact Me</title>
   <link rel="stylesheet" href="../Css/style.css">
   <script src="../script_updates.js"></script>
+  <style>
+    /* Full-Screen Rectangle Box */
+    .contact-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full screen height */
+      background: linear-gradient(135deg, #1a1a1a, #333);
+      color: white;
+    }
+
+    .contact-box {
+      position: relative;
+      background: #222;
+      border: 2px solid #f8ba10;
+      border-radius: 10px;
+      padding: 50px;
+      text-align: center;
+      width: 70%;
+      max-width: 800px;
+      animation: fadeIn 2s ease-out;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .contact-box h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #f8ba10;
+    }
+
+    .contact-box p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .contact-icons {
+      margin: 20px 0;
+    }
+
+    .contact-icons a {
+      margin: 0 10px;
+      color: white;
+      text-decoration: none;
+      transition: transform 0.3s ease, color 0.3s ease;
+    }
+
+    .contact-icons a:hover {
+      color: #f8ba10;
+      transform: scale(1.2);
+    }
+
+    .contact-icons img {
+      width: 40px;
+      height: 40px;
+    }
+
+    /* Marquee */
+    .contact-marquee {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      color: #fff;
+      font-size: 1rem;
+      padding: 5px;
+      overflow: hidden;
+      border-top: 2px solid #f8ba10;
+    }
+
+    .contact-marquee p {
+      animation: marquee 10s linear infinite;
+      white-space: nowrap;
+    }
+
+    /* Keyframes */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.9);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes marquee {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+  </style>
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -19,44 +115,57 @@
         <li><a href="Projects.html" id="projects-link">Projects</a></li>
         <li><a href="Skills.html" id="skills-link">Skills</a></li>
         <li><a href="#Contact" id="contact-link">Contact Me</a></li>
-        
       </ul>
     </div>
   </nav>
 
-   <!-- Sticky Footer Section -->
-   <footer class="footer" id="footer">
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-box">
+      <h2>Thanks for visiting my portfolio!</h2>
+      <p>Please feel free to contact me:</p>
+      <div class="contact-icons">
+        <a href="mailto:manavshah.official@gmail.com" title="Email Me">
+          <img src="https://w7.pngwing.com/pngs/1010/602/png-transparent-gmail-email-gmail-angle-rectangle-triangle-thumbnail.png" alt="Email">
+        </a>
+        <a href="https://linkedin.com/in/manavshahthgr8" target="_blank" title="Connect on LinkedIn">
+          <img src="..\Images\LinkedIn-Emblema.png" alt="LinkedIn">
+        </a>
+      </div>
+      <div class="contact-marquee">
+        <p>Site is not regularly updated. Please contact me for an updated profile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sticky Footer Section -->
+  <footer class="footer" id="footer">
     <div class="footer-center">
       <p>Thanks for visiting my profile till the end!</p>
     </div>
     <div class="footer-container">
-      <!-- Left Section -->
+      <!-- Footer Left Section -->
       <div class="footer-left">
-        <img src="Images\transparent-coding-development-icon-free-png.webp" alt="Site Logo" class="footer-logo">
+        <img src="../Images/transparent-coding-development-icon-free-png.webp" alt="Site Logo" class="footer-logo">
         <ul class="footer-links">
-          <li><a href="Pages\Skills.html">Skills</a></li>
-          <li><a href="Pages\Projects.html">Projects</a></li>
-          <li><a href="Pages\Contact.html">Contact</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="Skills.html">Skills</a></li>
+          <li><a href="Projects.html">Projects</a></li>
         </ul>
       </div>
-  
-      <!-- Centered Message -->
-     
-  
-      <!-- Right Section -->
+
+      <!-- Footer Right Section -->
       <div class="footer-right">
         <p>Let's stay connected</p>
         <a href="https://linkedin.com/in/manavshahthgr8" target="_blank">
-          <img src="Images\LinkedIn-Emblema.png" alt="LinkedIn Logo" class="social-logo">
+          <img src="../Images/LinkedIn-Emblema.png" alt="LinkedIn Logo" class="social-logo">
         </a>
       </div>
     </div>
-  
+
     <div class="footer-bottom">
       <p>&copy; 2024 Manav's Portfolio | Designed with love</p>
     </div>
   </footer>
-  
-
 </body>
 </html>

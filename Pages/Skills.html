@@ -7,6 +7,67 @@
   <title>Skill Section</title>
   <link rel="stylesheet" href="../Css/style.css">
   <script src="../script_updates.js"></script>
+  <style>
+  /* Skills Section */
+  .skills-section {
+    padding: 50px;
+    background: #333;
+    text-align: center;
+  }
+  
+  .skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #f8ba10;
+  }
+  
+  .skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted min width for better fit */
+    gap: 20px;
+    justify-content: center; /* Ensures boxes are centered if there's extra space */
+  }
+  
+  .skill-category {
+    background: #1b1b1b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.918);
+    width: 100%; /* Ensures consistency */
+    max-width: 300px; /* Prevents overly wide boxes */
+  }
+  
+  .skill-category h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #f1f50c;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skills-list li {
+    background: #000000;
+    margin: 5px 0;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .skills-list li:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-3px);
+  }
+</style>  
 </head>
 <body>
   <!-- Navigation Bar -->
@@ -24,6 +85,94 @@
     </div>
   </nav>
 
+ <!-- Skills Section -->
+ <!-- Skills Section -->
+<section class="skills-section" id="Skills">
+  <h2>My Skills</h2>
+  <div class="skills-container">
+    
+    <!-- Technical & Programming Languages -->
+    <div class="skill-category">
+      <h3>Technical Skills & Languages</h3>
+      <ul class="skills-list">
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>SQL</li>
+        <li>HTML & CSS</li>
+        <li>Full Stack</li>
+        <li>Node.js</li>
+        <li>Spring</li>
+        <li>API etc</li>
+     
+       
+      </ul>
+    </div>
+
+    <!-- Soft Skills & Non-Technical Skills -->
+    <div class="skill-category">
+      <h3>Soft Skills & Non-Technical Skills</h3>
+      <ul class="skills-list">
+        <li>Leadership</li>
+        <li>Team Collaboration</li>
+        <li>Strategic Planning</li>
+        <li>Effective Communication</li>
+        <li>User Journey Mapping</li>
+        <li>Problem Solving</li>
+        <li>Critical Thinking</li>
+        <li>Prioritization (MVP, MoSCoW)</li>
+        <li>Storytelling</li>
+        <li>Time Management</li>
+      </ul>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-category">
+      <h3>Tools</h3>
+      <ul class="skills-list">
+        <li>JIRA</li>
+        <li>Postman</li>
+        <li>Git</li>
+        <li>Mixpanel</li>
+        <li>Docker</li>
+        <li>Google Analytics</li>
+        <li>Figma</li>
+        <li>A/B Testing Platforms</li>
+        <li>Tableau / PowerBI</li>
+      </ul>
+    </div>
+
+    <!-- Frameworks -->
+    <div class="skill-category">
+      <h3>Frameworks</h3>
+      <ul class="skills-list">
+        <li>Agile & Scrum</li>
+        <li>Kanban</li>
+        <li>Design Thinking</li>
+        <li>Value Proposition Canvas</li>
+        <li>User Persona Creation</li>
+        <li>Test-Driven Development (TDD)</li>
+      </ul>
+    </div>
+
+    <!-- Other Skills -->
+    <div class="skill-category">
+      <h3>Other Skills</h3>
+      <ul class="skills-list">
+        <li>Market Research</li>
+        <li>Stakeholder Management</li>
+        <li>Wireframing & Prototyping</li>
+        <li>Data Analysis</li>
+        <li>Cross-Functional Collaboration</li>
+        <li>Customer-Centric Design</li>
+        <li>Feature Roadmap Planning</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+
    <!-- Sticky Footer Section -->
    <footer class="footer" id="footer">
     <div class="footer-center">
@@ -32,11 +181,11 @@
     <div class="footer-container">
       <!-- Left Section -->
       <div class="footer-left">
-        <img src="Images\transparent-coding-development-icon-free-png.webp" alt="Site Logo" class="footer-logo">
+        <img src="..\Images\transparent-coding-development-icon-free-png.webp" alt="Site Logo" class="footer-logo">
         <ul class="footer-links">
-          <li><a href="Pages\Skills.html">Skills</a></li>
-          <li><a href="Pages\Projects.html">Projects</a></li>
-          <li><a href="Pages\Contact.html">Contact</a></li>
+          <li><a href="..\index.html">Home</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Contact.html">Contact</a></li>
         </ul>
       </div>
   
@@ -47,7 +196,7 @@
       <div class="footer-right">
         <p>Let's stay connected</p>
         <a href="https://linkedin.com/in/manavshahthgr8" target="_blank">
-          <img src="Images\LinkedIn-Emblema.png" alt="LinkedIn Logo" class="social-logo">
+          <img src="..\Images\LinkedIn-Emblema.png" alt="LinkedIn Logo" class="social-logo">
         </a>
       </div>
     </div>
